@@ -40,7 +40,7 @@ namespace Tyuiu.TarasovVD.Sprint1.Task2.V4
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Площадь квадрата = " + ds.CalculateSquare(x));
+            Console.WriteLine("Площадь квадрата =  " + ds.CalculateSquare(x));
 
             Console.ReadKey();
         }

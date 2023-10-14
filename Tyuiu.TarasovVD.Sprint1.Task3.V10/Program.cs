@@ -36,9 +36,10 @@ namespace Tyuiu.TarasovVD.Sprint1.Task3.V10
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            
+
             double moneyValue = ds.NumberToMoney(number);
-            Console.WriteLine($"Денежная сумма: {moneyValue} руб.");
+            Console.WriteLine($"Денежная сумма: {moneyValue} руб. {moneyValue % 1 * 100} коп.");
+
 
             Console.ReadKey();
         }

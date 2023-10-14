@@ -11,9 +11,12 @@ namespace Tyuiu.TarasovVD.Sprint1.Task3.V10.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            
             double res = ds.NumberToMoney(23.6);
-            Assert.AreEqual("23 руб. 60 коп. ", res);
+            string expected = string.Format("{0:0.##} руб. {1:00} коп.", Math.Floor(res), (res - Math.Floor(res)) * 100);
+            string actual = string.Format("{0:0.##} руб. {1:00} коп.", Math.Floor(23.6), (23.6 - Math.Floor(23.6)) * 100);
+            Assert.AreEqual(expected, actual);
+
+
         }
     }
 }
